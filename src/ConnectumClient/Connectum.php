@@ -44,8 +44,8 @@ class Connectum
             $this->application->setConfig($config);
         }
 
-       // $loader = require __DIR__. '../../../../../../vendor/autoload.php'; // path for package
-        $loader = require __DIR__. '../../../vendor/autoload.php'; // path for local development
+        $loader = require __DIR__. '../../../../../../vendor/autoload.php'; // path for package
+        //$loader = require __DIR__. '../../../vendor/autoload.php'; // path for local development
         $loader->setPsr4('Connectum\\Entity\\Custom\\', $this->application->getConfig()['modelsPath']);
 
     }
