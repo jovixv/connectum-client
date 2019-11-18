@@ -66,7 +66,7 @@ class Connectum
 
             if ($this->isLaravelInstalled()) {
                 if (function_exists('config'))
-                    $configFile = config('dfsConfig');
+                    $configFile = config('ConnectumConfig');
             }else{
                 $configFile = include $path;
             }
