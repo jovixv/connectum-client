@@ -29,6 +29,7 @@ class OrderInformation extends AbstractModel
     public function setExpand(string $expand)
     {
         $this->payload['expand'] = $expand;
+        return $this;
     }
 
     /**

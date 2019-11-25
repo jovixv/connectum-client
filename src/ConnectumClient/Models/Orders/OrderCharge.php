@@ -28,6 +28,7 @@ class OrderCharge extends AbstractModel
     public function rSetAmount(float $amount)
     {
         $this->payload['amount'] = $amount;
+        return $this;
     }
 
     /**
